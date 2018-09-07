@@ -1,2 +1,1 @@
-# ODK_TRAINING
-Training materials to support set up and use of LSHTM Open Data Kit
+## Documentation to support learning how to use LSHTM Open Data Kit
