@@ -1,5 +1,5 @@
 <img style="float: right;" src="./Files/LSHTM__ORK_logo.png" alt="drawing" width="400"/>
-</Br></Br></Br></Br></Br></Br></Br>
+</Br>
 
 
 ###LSHTM Open Data Kit : Server/Device Setup Guide
@@ -151,7 +151,8 @@ In both cases you may wish to substitute ```MyPrivateKey``` and ```MyPublicKey``
 
 You should have two files, with names something like this...
 
->ODK.PRIVATE.KEY.11110.pem  >ODK.PUBLIC.KEY.11110.pem
+>ODK.PRIVATE.KEY.11110.pem  
+>ODK.PUBLIC.KEY.11110.pem
 
 Open the ```public key``` file in a text editor.
 
