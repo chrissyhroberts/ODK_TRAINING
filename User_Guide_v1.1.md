@@ -1,11 +1,11 @@
-<img style="float: right;" src="./Files/LSHTM__ORK_logo.png" alt="drawing" width="400"/>
+<img style="src="./Files/LSHTM__ORK_logo.png" alt="drawing" width="400"/>
 </Br>
 
 
-###LSHTM Open Data Kit : Server/Device Setup Guide
+### LSHTM Open Data Kit : Server/Device Setup Guide
+
 **version 2.0.0 -- 2018-09-07**
 
-*Compiled by Dr Chrissy h. Roberts & Dr Michael Marks*
 </Br></Br>
 
 ###Introduction
