@@ -1,4 +1,4 @@
-<img style="src="./Files/LSHTM__ORK_logo.png" alt="drawing" width="400"/>
+<img src="./Files/LSHTM__ORK_logo.png" alt="drawing" width="400"/>
 </Br>
 
 
