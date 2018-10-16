@@ -328,28 +328,72 @@ Your forms are now ready to be loaded on to the Android handsets.
 
   
 #### Setting up your Android devices
-  
-These steps must be performed on each Android device that will be used in your project.
+Note that some of the menus differ between devices, so you may need to use the internet or play around to find the correct menus on your specific devices.  
 
-The following steps are designed to ensure the following.
-
-*	ODK Collect works as intended with access to GPS, photo and audio/video recording.
-*	Only the field workers can access the ODK questionnaire(s) and any data within it.
-*	Field workers cannot access any apps or setting to which they should not have access e.g. to adjust date settings or play games on the internet.
-
-*	Only research managers can access the full functions of the tablet.
-*	Data is protected by encryption. 
-*	The tablet can be traced, locked and wiped remotely, should it be lost or stolen.
-*	Contact details of the research team are on the tablet, so it can be reunited with the owner if lost.
-
-1.	Set a Screen Lock, with a password the field team have access to. 
-a.	Go to settings -> security -> Screen Lock.
-b.	Make a note of the password selected.
-c.	Ensure “Power button instantly locks” is also activated(settings -> security)
+* These steps must be performed on each Android device that will be used in your project and are designed to ensure the following...     
+	*	ODK Collect works as intended with access to GPS, photo and audio/video recording
+	*	Only the field workers can access the ODK questionnaire(s) and any data within it
+	*	Field workers cannot access any apps or setting to which they should not have access
+	*	Only research managers can access the full functions of the tablet.
+	*	Data is protected by encryption. 
+	*	The tablet can be traced, locked and wiped remotely, should it be lost or stolen.
+	*	Contact details of the research team are on the tablet, so it can be reunited with the owner if lost.
 
 
+* Set a Screen Lock, with a password the field team have access to. 
+	*	Go to settings -> security -> Screen Lock.
+	*	Make a note of the password selected.
+	*	Ensure “Power button instantly locks” is also activated(settings -> security)
 
-* Visit the Android Play Store and install ```ODK Collect```  
+* Encrypt the tablet.
+	* Settings -> security -> Encrypt Tablet and follow instructions. You’ll need to have the tablet charged and plugged in. 
+
+* Enable GPS location services
+	*	Settings -> Location.  Ensure this is on.
+
+* Install ```Barcode Scanner``` app by “ZXing team”.
+	*	Go to Play Store.
+	*	Search for “Barcode Scanner”
+	*	Select “Barcode Scanner” by “ZXing team”
+	* Tap “Install” and follow instructions
+
+* Install ```ODK Collect``` app
+	*	Go to Play Store, search for “ODK”, install the appropriate app
+
+* OPTIONAL: Install ```Open Map Kit``` app
+	* ODK Collect (Step 5) allows the collection of detailed GPS data. If you wish to also allow physical annotation of maps in the field then OpenMapKit adds this functionality.
+	*	Go to Play Store, search for ```Open Map Kit```, install the appropriate app
+
+* OPTIONAL BUT RECOMMENDED: Setup a mechanism to remotely monitor the app. 
+	*	If you have added a Google Account for the phone then it can be tracked via Android Device Manager online – this is recommended and allows one Google account to track multiple devices.
+	* The alternative is to install the ```Prey Anti Theft``` app, a remote device tracker that can wipe the tablet if it is lost.
+
+* OPTIONAL BUT RECOMMENDED: Install the ```Applock``` app, to block access to Settings and any apps that are not required.
+	*	Use a DIFFERENT pass number to that used for the screen lock. 
+	*	Record the pass number used
+	* 	Install ```Advanced Protection``` app for AppLock from the Play store. This prevents users from disabling the AppLock.
+	*	Block access to settings and any apps that should not be accessed such as Settings, Gmail, Clock, Prey, Play Store (and much more)...
+	
+*	Ensure that the tablet user can still use key apps:
+	*	ODK Collect
+	*	Barcode Scanner
+	*	Wifi
+	*	Camera
+	*	Sound Recorder / RecForge Pro II
+	*	Gallery
+	*	OpenMapKit if installed
+
+*	Note the IMEI device ID number 
+	*	Go to :Settings -> Security -> Status
+	* Record the “WLAN MAC address”.
+
+* Put a sticker on each tablet with an ID. You should have a record of the following for each device:
+	*	Tablet ID sticker
+	* Screen Lock password
+	* AppLock passnumber (and answer to security qu if set)
+	* IMEI device ID number
+
+
 * Open ODK Collect and press the "hamburger" (three dots) button to access ```General Settings```.  
 * Select ```server``` and enter the correct settings    
 
@@ -376,6 +420,27 @@ This will bring up a list of all the forms on your ODK server. Select
 the ones you want and click ```Get Selected```.  
 
 **Your device is now set up to collect data**.
+
+
+Before going to the field sites:
+
+**ESSENTIAL**  
+
+* Set the tablet in the relevant local language.
+	* Go to settings  ->  language & input  ->  language
+
+*	Ensure that the time and date are correct for the field site.
+	*	Go to Settings  ->  time & date.
+
+*RECOMMENDED*  
+
+*	Add contact details on a sticker on the back of the tablet
+	* e.g. contact telephone number for the field supervisor or a local co-investigator.
+
+*	Add contact details on the Lock Screen
+	*	Go to Settings  ->  Security  -> Owner Info
+	* Enter an owner name and a contact telephone number e.g. for the field supervisor or a local co-investigator.
+
 
 
   <div style="page-break-after: always;"></div>
@@ -456,7 +521,8 @@ In order to be able to decrypt your data, your computer's installation of Java m
 
 * Press the ‘Connect’ button and ODK Briefcase should show you a list of all the forms that you can copy from the server on to your local (desktop/laptop) machine. This action is called a ‘pull’.
 
-<img src="./Files/Connected_to_server.png" alt="drawing" width="600"/>
+<img src="./Files/Connected_to_server.png" alt="drawing" width="600"/>  
+
 
 * Tick the box next to the forms you want to pull or press the ```select all``` button.  
 * Press the ```Pull``` button to pull your data in to the folder you specified earlier.  
