@@ -74,7 +74,8 @@ A typical set of users might include one ```admin``` account, one account for ``
 |recovery|recovery|ODK||||X|
 
 The server is now secure and should be set up multiple users.
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>  
+
 #### **Setting up encryption**
 
 All data communications from Android devices to the LSHTM servers are secure and encrypted by default, but without additional levels of data protection your data would be vulnerable to being accessed by third parties. For instance if a malicious party could obtain or guess your password for a ```data viewer``` account, then they could read and download all your study data using a web browser from anywhere in the world.
@@ -197,7 +198,8 @@ Save the ```ODK.PUBLIC.KEY.11110.txt``` file for later. You will use this 'one-l
 
 -
 
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>  
+
 #### Designing a basic ODK form
 
 
@@ -328,6 +330,24 @@ Your forms are now ready to be loaded on to the Android handsets.
 #### Setting up your Android devices
   
 These steps must be performed on each Android device that will be used in your project.
+
+The following steps are designed to ensure the following.
+
+*	ODK Collect works as intended with access to GPS, photo and audio/video recording.
+*	Only the field workers can access the ODK questionnaire(s) and any data within it.
+*	Field workers cannot access any apps or setting to which they should not have access e.g. to adjust date settings or play games on the internet.
+
+*	Only research managers can access the full functions of the tablet.
+*	Data is protected by encryption. 
+*	The tablet can be traced, locked and wiped remotely, should it be lost or stolen.
+*	Contact details of the research team are on the tablet, so it can be reunited with the owner if lost.
+
+1.	Set a Screen Lock, with a password the field team have access to. 
+a.	Go to settings -> security -> Screen Lock.
+b.	Make a note of the password selected.
+c.	Ensure “Power button instantly locks” is also activated(settings -> security)
+
+
 
 * Visit the Android Play Store and install ```ODK Collect```  
 * Open ODK Collect and press the "hamburger" (three dots) button to access ```General Settings```.  
