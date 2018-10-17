@@ -8,13 +8,13 @@
 
 </Br></Br>
 
-###Introduction
+### Introduction
 
 *This is not meant to be a definitive guide to using ODK but provides an
 overview of configuring your LSHTM Open Data Kit Server, devices and forms. More extensive documentation for ODK can be found at [docs.opendatakit.org](https://docs.opendatakit.org) and [xlsform.org](xlsform.org).  
 More information about LSHTM Open Research Kits can be found on our project website [odk.lshtm.ac.uk](odk.lshtm.ac.uk)
 
-#####Outcomes
+##### Outcomes  
 At the end of this tutorial you should will be able to do the following.
 
 	1. Set up a new account and server
@@ -29,7 +29,7 @@ Email queries to [*odk@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK)
   
 -
 
-####Setting up your server
+#### Setting up your server
 
 1. 	**Request an ODK Server** at LSHTM by completing [this form](https://docs.google.com/forms/d/e/1FAIpQLSfz-dwv2knciYxO8651qja3MyQ6yCRhG8WjjDsBlediuNuozA/viewform]).  
  - You will receive a confirmation email which contains **the URL of your server**. This URL is only for use by your team and for the specific project named in the server request form.  
@@ -74,8 +74,9 @@ A typical set of users might include one ```admin``` account, one account for ``
 |recovery|recovery|ODK||||X|
 
 The server is now secure and should be set up multiple users.
-<div style="page-break-after: always;"></div>
-####**Setting up encryption**
+<div style="page-break-after: always;"></div>  
+
+#### **Setting up encryption**
 
 All data communications from Android devices to the LSHTM servers are secure and encrypted by default, but without additional levels of data protection your data would be vulnerable to being accessed by third parties. For instance if a malicious party could obtain or guess your password for a ```data viewer``` account, then they could read and download all your study data using a web browser from anywhere in the world.
 
@@ -107,7 +108,7 @@ To decrypt the data, it must first be downloaded from the server to your compute
 
 -
 
-####**Obtaining asymmetric encryption keys**
+#### **Obtaining asymmetric encryption keys**
 
 You will need a unique pair of asymmetric encryption key files. Depending on how you want to use them, you could choose to either...
 
@@ -197,8 +198,9 @@ Save the ```ODK.PUBLIC.KEY.11110.txt``` file for later. You will use this 'one-l
 
 -
 
-<div style="page-break-after: always;"></div>
-####Designing a basic ODK form
+<div style="page-break-after: always;"></div>  
+
+#### Designing a basic ODK form
 
 
 ODK form design is performed using Microsoft Excel. 
@@ -275,7 +277,7 @@ Select the ```choices``` sheet and add the following column headings (case sensi
 -
 
 
-####**Convert XLSX form to XML form**
+#### **Convert XLSX form to XML form**
 
 A piece of software called [ODK XLSForm Offline](https://github.com/opendatakit/xlsform-offline/releases/latest) is used to convert the finished Excel (.XLSX) file to the Extensible Markup Language (.XML) format that is used by the ODK server. 
 
@@ -297,7 +299,7 @@ A piece of software called [ODK XLSForm Offline](https://github.com/opendatakit/
 
 
 
-####**Uploading Blank Forms to the ODK Server**
+#### **Uploading Blank Forms to the ODK Server**
 
 You need to upload your *Blank forms* to your project's ODK Server. A project might have one or many forms (e.g First Visit, Second Visit, Consent Form...)
 
@@ -312,7 +314,7 @@ the ```Form Management``` tab.
 
 <img src="./Files/upload_form_to_server.png" alt="drawing" width="800"/>
 
-#####Note : If you delete a form from the server, you will also delete any data submitted using that form.
+##### Note : If you delete a form from the server, you will also delete any data submitted using that form.
 
 
 Your forms are now ready to be loaded on to the Android handsets.
@@ -325,9 +327,27 @@ Your forms are now ready to be loaded on to the Android handsets.
 
 
   
-####Setting up your Android devices
+#### Setting up your Android devices
   
 These steps must be performed on each Android device that will be used in your project.
+
+The following steps are designed to ensure the following.
+
+*	ODK Collect works as intended with access to GPS, photo and audio/video recording.
+*	Only the field workers can access the ODK questionnaire(s) and any data within it.
+*	Field workers cannot access any apps or setting to which they should not have access e.g. to adjust date settings or play games on the internet.
+
+*	Only research managers can access the full functions of the tablet.
+*	Data is protected by encryption. 
+*	The tablet can be traced, locked and wiped remotely, should it be lost or stolen.
+*	Contact details of the research team are on the tablet, so it can be reunited with the owner if lost.
+
+1.	Set a Screen Lock, with a password the field team have access to. 
+a.	Go to settings -> security -> Screen Lock.
+b.	Make a note of the password selected.
+c.	Ensure “Power button instantly locks” is also activated(settings -> security)
+
+
 
 * Visit the Android Play Store and install ```ODK Collect```  
 * Open ODK Collect and press the "hamburger" (three dots) button to access ```General Settings```.  
@@ -365,7 +385,7 @@ the ones you want and click ```Get Selected```.
 
 
 
-####Collecting and Uploading Data
+#### Collecting and Uploading Data
 
 
 Collecting Data (Steps 1-5) does not require a mobile or Wi-Fi
@@ -403,7 +423,7 @@ The simple solution is to open the ```Chrome``` browser on the Android device an
 [Quo Vadis Intermediate Certificate](https://cert.odk.lshtm.ac.uk/cert/QuoVadisOVIntermediateCertificate.crt)  
 
 
-####Downloading and Decrypting Data
+#### Downloading and Decrypting Data
 
 
 In order to be able to decrypt your data, your computer's installation of Java may need to be updated. This is because the decryption requires advanced cryptography files that are not included in all Java releases.
