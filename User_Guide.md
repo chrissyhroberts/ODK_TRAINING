@@ -10,7 +10,7 @@
 
 ### Introduction
 
-*This is not meant to be a definitive guide to using ODK but provides an
+* This is not meant to be a definitive guide to using ODK but provides an
 overview of configuring your LSHTM Open Data Kit Server, devices and forms. More extensive documentation for ODK can be found at [docs.opendatakit.org](https://docs.opendatakit.org) and [xlsform.org](xlsform.org).  
 More information about LSHTM Open Research Kits can be found on our project website [odk.lshtm.ac.uk](odk.lshtm.ac.uk)
 
@@ -35,8 +35,8 @@ Email queries to [*odk@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK)
  - You will receive a confirmation email which contains **the URL of your server**. This URL is only for use by your team and for the specific project named in the server request form.  
  - Usually servers are set up within 72 hours of request, but at busy times this may be longer.
 
- 	**Request loan of devices (tablets, phones, fingerprint readers, GPS loggers etc) ** 
-	Contact us by (email)[mailto:odk@lshtm.ac.uk] to discuss your needs
+ 	**Request loan of devices (tablets, phones, fingerprint readers, GPS loggers etc)**   
+	Contact us by [email](mailto:odk@lshtm.ac.uk) to discuss your needs
 
 2. **Access your server** using a browser (Chrome, Safari & Firefox have been tested)
  - The URL of your server will take the form ```https://yourprojectname.odk.lshtm.ac.uk```  
