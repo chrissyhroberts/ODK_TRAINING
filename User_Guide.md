@@ -31,7 +31,7 @@ Email queries to [*odk@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK)
 
 #### Setting up your server
 
-1. 	**Request an ODK Server** at LSHTM by completing [this form](https://forms.gle/RoqjQ1Td2grhjHSH9]).  
+1. 	**Request an ODK Server** at LSHTM by completing [this form](https://forms.gle/RoqjQ1Td2grhjHSH9).  
  - You will receive a confirmation email which contains **the URL of your server**. This URL is only for use by your team and for the specific project named in the server request form.  
  - Usually servers are set up within 72 hours of request, but at busy times this may be longer.
 
