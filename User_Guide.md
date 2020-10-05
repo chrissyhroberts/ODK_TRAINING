@@ -29,11 +29,14 @@ Email queries to [*odk@lshtm.ac.uk*](mailto:ODK@LSHTM.AC.UK)
   
 -
 
-#### Setting up your server
+#### Setting up your server and obtaining devices from the device library
 
 1. 	**Request an ODK Server** at LSHTM by completing [this form](https://forms.gle/RoqjQ1Td2grhjHSH9).  
  - You will receive a confirmation email which contains **the URL of your server**. This URL is only for use by your team and for the specific project named in the server request form.  
  - Usually servers are set up within 72 hours of request, but at busy times this may be longer.
+
+ 	**Request loan of devices (tablets, phones, fingerprint readers, GPS loggers etc) ** 
+	Contact us by (email)[mailto:odk@lshtm.ac.uk] to discuss your needs
 
 2. **Access your server** using a browser (Chrome, Safari & Firefox have been tested)
  - The URL of your server will take the form ```https://yourprojectname.odk.lshtm.ac.uk```  
